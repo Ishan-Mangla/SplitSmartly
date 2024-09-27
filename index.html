@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SplitSmartly</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="Images/logo 1" alt="Logo" id="logo">
+        <h1>SplitSmartly</h1>
+    </header>
+
+    <div class="container">
+        <!-- Add Participants Form -->
+        <div class="form-section">
+            <h2>Add Participants</h2>
+            <input type="text" id="participantName" placeholder="Enter participant name" title="Participant name cannot be empty">
+            <button onclick="addParticipant()">Add Participant</button>
+        </div>
+
+        <!-- Participants List -->
+        <div class="participants">
+            <h3>Participants</h3>
+            <ul id="participantList"></ul>
+        </div>
+
+        <!-- Add Expense Form -->
+        <div class="form-section">
+            <h2>Add Expense</h2>
+            <input type="number" id="expenseAmount" placeholder="Enter amount" title="Expense amount cannot be empty or zero">
+            <select id="expensePayer">
+        <option value="" disabled selected>Select Payer</option>
+      </select>
+            <button onclick="addExpense()">Add Expense</button>
+        </div>
+
+        <!-- Expense Summary -->
+        <div class="summary">
+            <h2>Summary</h2>
+            <ul id="expenseSummary"></ul>
+            <p id="totalExpense"></p>
+        </div>
+
+        <!-- Currency Converter -->
+        <div class="form-section">
+            <h2>Currency Converter</h2>
+            <select id="currencyConverter">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="INR">INR</option>
+      </select>
+            <button onclick="convertCurrency()">Convert</button>
+        </div>
+
+        <!-- Reset Button -->
+        <div class="form-section">
+            <button onclick="resetApp()" id="resetBtn">Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+<footer>
+    © 2024 SplitSmartly @Ishan Mangla
+</footer>
